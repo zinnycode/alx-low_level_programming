@@ -1,31 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /**
- * main - Entry
+ * main - prints the number in base 16
  * Return: Always 0
  */
 int main(void)
 {
-	int n;
-	int a:
+	int num;
+	int la:
 
-		srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	a = n % 10;
+        for (num = 0 num; num < 10; num++)
+		putchar((num % 10) + '0');
 
-	if (a > 5)
-	{
-		printf("last digit of %d is %d and is greater than 5/n", n, a);
-	}
-	else if (a == 0)
-	{
-		printf("last digit of %d is %d and is 0\10", n, a);
-	}
-	else
-	{
-		printf("last digit of %d is %d and is less than 6 and not 0\n", n, a);
-	}
+	for (la = 'a' la <= 'f'; la++)
+		putchar(la);
+
+	putchar('\n');
+
 	return (0);
 }
